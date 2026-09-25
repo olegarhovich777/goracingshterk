@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080">
+
+    <!-- Верхняя дорога -->
+    <View
+        android:id="@+id/roadTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#A9A9A9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/roadDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Разделительная полоса -->
+    <View
+        android:id="@+id/roadDivider"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Нижняя дорога -->
+
+    <!-- Финишная клетчатая лента -->
+
+    <!-- Оранжевая машина (верхняя дорога) -->
+
+    <ImageView
+        android:id="@+id/finishLine"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/finish_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Розовая машина (нижняя дорога) -->
+
+    <!-- Панель кнопок -->
+
+    <ImageView
+        android:id="@+id/carOrange"
+        android:layout_width="190dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="4dp"
+        android:contentDescription="Оранжевая машина"
+        android:src="@drawable/car_orange"
+        app:layout_constraintBottom_toBottomOf="@id/roadTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/roadTop"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <ImageView
+        android:id="@+id/carPink"
+        android:layout_width="204dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="4dp"
+        android:contentDescription="Розовая машина"
+        android:src="@drawable/car_pink"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="456dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnDriveLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ЕХАТЬ"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="СТАРТ"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDriveRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ЕХАТЬ"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

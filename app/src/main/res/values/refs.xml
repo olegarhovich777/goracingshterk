@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="finish_line">5</drawable>
+    <drawable name="car_orange">7</drawable>
+    <drawable name="car_pink">9</drawable>
+</resources>

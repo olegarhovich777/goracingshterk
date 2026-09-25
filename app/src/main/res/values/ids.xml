@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="roadTop" type="id">1</item>
+    <item name="roadDivider" type="id">2</item>
+    <item name="roadBottom" type="id">3</item>
+    <item name="finishLine" type="id">4</item>
+    <item name="carOrange" type="id">6</item>
+    <item name="carPink" type="id">8</item>
+    <item name="btnDriveLeft" type="id">10</item>
+    <item name="btnStart" type="id">11</item>
+    <item name="btnDriveRight" type="id">12</item>
+</resources>
